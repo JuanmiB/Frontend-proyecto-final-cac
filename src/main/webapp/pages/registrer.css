@@ -1,0 +1,113 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181419;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right top, #0000008a, #0000008a), url('../assets/img/bg-register.jpg') center center/cover;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f0eee9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+.p-login{
+    text-align: center;
+}
+
+
+button {
+    background-color: #273287;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 155px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+button:hover {
+    background-color: #17184b;
+}
+
+div.divider {
+    border-bottom: 2px solid #000000;
+    margin: 20px 0;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.email,
+.password {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background: transparent;
+}
+
+form button[type="submit"] {
+    background-color: #3367D6;
+    justify-self: center;
+}
+
+form button[type="submit"]:hover {
+    background-color: #4285F4;
+}
+
+p a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+form{
+    display: grid;
+
+
+}

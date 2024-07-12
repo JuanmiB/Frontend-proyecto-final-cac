@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesMovies.css">
+    <title>Lista de peliculas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <h1>🎬 CineNow</h1>
+            <ul>
+                <li><a href="#tendencias">Tendencias</a></li>
+                <li><a href="../../pages/registrer.html">Registrarse</a></li>
+                <li><a href="../../pages/singIn/index.html">Iniciar Sesion</a></li>
+                <li><a href="../../pages/MoviesList/index.html">Lista de peliculas <small>(Conexion api)</small></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-movies">
+        <section class="search-container">
+            <h1 class="title-search">Aca se hace la conexion con una api</h1>
+            <form class="form-container" id="form-container">
+                <input type="text" id="search" placeholder="Buscar pelicula">
+                <button id="search-button">Buscar</button>
+            </form>
+            <ul id="movies-list"></ul>
+        </section>
+
+        <section class="movie-table-container">
+            <h2>Mis Peliculas</h2>
+            <small>Aca se muestra una crud tabla que viene de una base de datos con backend en Java</small>
+
+            <div >
+<form action="" >
+                    <label for="">
+                        Titulo
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Fecha de estreno
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Genero
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Duracion
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Director
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Reparto
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Sinopsis
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        Poster
+                        <input type="text">
+                    </label>
+                </form>
+            </div>
+            
+               <table id="pelicula-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Titulo</th>
+                        <th>Fecha de estreno</th>
+                        <th>Genero</th>
+                        <th>Duracion</th>
+                        <th>Director</th>
+                        <th>Reparto</th>
+                        <th>Sinopsis</th>
+                        <th>Poster</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="../../js/getMovies.js"></script>
+<script src="../../js/getMoviesDB.js"></script>
+
+</html>

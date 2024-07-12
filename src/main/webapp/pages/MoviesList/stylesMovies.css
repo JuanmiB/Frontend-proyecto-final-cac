@@ -1,0 +1,207 @@
+:root {
+    --bg-black: #181419;
+    --bg-darkblue: #003344;
+    --ft-white: #f5f4ed;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right top, #0000008a, #0000008a), url('../../assets/img/bg-register.jpg') center center/cover;
+	flex-direction: column;
+}
+header,
+footer {
+    background: var(--bg-darkblue);
+    min-height: 80px;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        gap: 30px;
+    }
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (min-width: 780px) {
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        ul {
+            flex-direction: row;
+        }
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background-color: #181419;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-search {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Movie List Styles */
+#movies-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#movies-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background-color: #aeaeae76;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#movies-list li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ESTILOS TABLA */
+#pelicula-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+#pelicula-table thead th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+#pelicula-table tbody tr {
+    background-color: #6d5f5f;
+}
+
+#pelicula-table tbody tr:hover {
+    background-color: #bedab9;
+}
+
+#pelicula-table tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#pelicula-table tbody td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+/* BOTONES */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #45a049; 
+}
+
+.btn-eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f;
+}
